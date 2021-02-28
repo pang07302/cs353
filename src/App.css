@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.recipe_container {
+  margin: 0 auto;
+  width: 800px;
+  font-family: sans-serif;
+  background-color: #bfb1ac;
+  flex: 1;
+}
+.recipe_header {
+  height: 220px;
+  width: 800px;
+
+  position: relative;
+}
+.recipe_img {
+  margin: 1%;
+  float: right;
+}
+.recipe_img img {
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipe_title {
+  float: left;
+  font-family: cursive;
+  font-size: 2.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  margin: 1%;
+  max-width: 55%;
+  background-color: white;
+  opacity: 0.9;
+}
+.recipe_content {
+  background-color: white;
+  opacity: 0.9;
+  margin: 1%;
+  position: relative;
+  display: inline-block;
+}
+.recipe_content div {
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recipe_instruction_padding {
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.recipe_ing_name {
+  margin: 2%;
+  width: 50%;
+  /*background-color: blue;*/
 }
-
-.App-link {
-  color: #61dafb;
+.recipe_ing_amount {
+  margin: 2%;
+  width: 40%;
+  list-style-type: none;
+  /*background-color: red;*/
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-family: Impact, fantasy;
 }
