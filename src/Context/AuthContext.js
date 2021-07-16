@@ -13,12 +13,16 @@ export function AuthProvider({ children }) {
 
     
     const http = axios.create({
-        baseURL: `http://localhost:8000`
+        baseURL: `http://localhost:8000`,
+        withCredentials:true,
+        headers:{'Access-Control-Allow-Origin':'*', 'Content-Type':'application/json'}
     })  
+
+
 
     const createUser = user => http.post(`/register`, user)
     const login = user => http.post(`/login`, user)
-    const getUser = () => http.post(`/account`)
+    const getUser = () => http.get(`/account`)
     
     
 
@@ -68,16 +72,7 @@ export function AuthProvider({ children }) {
     // },[]);
 
 
-    // async function requestUser(){
-    //     try{
-    //         let res = await http.get(`/account`);
-         
-    //         setCurrentUser(res.data)
-            
-    //     }catch(error){
-    //         console.log(error);
-    //     }
-    // }
+    
 
     const value = {
         // currentUser,

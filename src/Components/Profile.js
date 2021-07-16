@@ -33,17 +33,7 @@ export default function Profile(){
          }
      }, [])
 
-// async function handleOnSave(){
-//         const formData = new FormData()
-//         formData.append('file', file)
-//         try{
-//             await editPhoto(formData)
-//             console.log('Upload photo successfully')
-//         }catch{
-//             console.log('Failed to upload')
-//         }
-//         setShow(false)
-//     }
+
     return(
         <>
         <CenteredContainer>

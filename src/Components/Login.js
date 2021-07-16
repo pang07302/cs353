@@ -24,11 +24,11 @@ export default function Login() {
             }
             
             await login(user)
+            
             history.push('/profile') 
 
         }catch{
-            // console.log(message.error)
-            // console.log(re)
+         
             setError("Failed to log in")
         }
         setLoading(false)
